@@ -1,0 +1,32 @@
+[project]
+name = "substack-post"
+version = "0.1.0"
+description = "以 Substack 財經文章為資料來源的閱讀助理：LangGraph agent 整合文章下載、RAG 問答與市場查價"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic>=0.103.1",
+    "beautifulsoup4>=4.15.0",
+    "chainlit>=2.11.1",
+    "chromadb>=1.5.9",
+    "html2text>=2025.4.15",
+    "jieba>=0.42.1",
+    "langchain-anthropic>=1.4.3",
+    "langgraph>=1.2.2",
+    "llama-index>=0.14.22",
+    "llama-index-embeddings-huggingface>=0.7.0",
+    "llama-index-llms-anthropic>=0.11.4",
+    "llama-index-vector-stores-chroma>=0.5.5",
+    "pandas>=3.0.3",
+    "plotly>=6.8.0",
+    "python-dotenv>=1.2.2",
+    "rank-bm25>=0.2.2",
+    "requests>=2.34.2",
+]
+
+[dependency-groups]
+dev = [
+    "gensim>=4.4.0",
+    "opencc>=1.4.2",
+    "pytest>=9.1.1",
+]

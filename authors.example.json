@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Author A",
+    "aliases": ["A 作者", "author a"],
+    "profile_user_id": "000000001",
+    "sid_env": "SUBSTACK_AUTHOR_A_SID"
+  },
+  {
+    "name": "Author B",
+    "aliases": ["B 作者", "author b"],
+    "profile_user_id": "000000002",
+    "sid_env": "SUBSTACK_AUTHOR_B_SID"
+  }
+]

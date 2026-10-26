@@ -1,0 +1,87 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# 探索/開發過程的 notebook，不上傳
+notebooks/
+
+# Databases / vector store data (runtime-generated, don't version)
+*.db
+*.sqlite3
+chroma_db/
+.chainlit/.files/
+.files/
+
+# macOS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+
+# uv
+.python-version
+
+# 開發過程留下的雜散檔案/資料快取（PROGRESS.md 第 2 點）——本機保留，不上傳
+all_posts.json
+*_article.json
+ferrai.json
+ferrai_content.md
+ferrai_paragraphs.txt
+ctxt_3_cleancontent.txt
+EOSE.md
+chainlit_learning.py
+test_bot.py
+*_article/
+test_code/
+app/raw_post_3.json
+
+# Chainlit 自動產生的設定/多語系翻譯檔（框架產物，不是手寫程式碼）
+.chainlit/
+app/.chainlit/
+chainlit.md
+
+# 開發進度筆記（內部用，不上傳）
+PROGRESS.md
+
+# 實驗用向量資料庫（evals/rag/build_experiment_index.py 產生）
+data/
+
+# README 草稿與舊版（舊版在 git 歷史裡也看得到）
+README_new.md
+README_old.md
+
+# 內部筆記與學習用文件，不上傳
+PRODUCTION_GAP.md
+evals/RAG_GUIDE.md
+evals/RAG_EVALUATION.md
+
+# 題庫候選檔含文章原文節錄（版權），只上傳篩選後的 golden_set.jsonl
+evals/rag/golden_set_candidates.jsonl
+
+# 真正的作者設定（範本是 authors.example.json）
+authors.json
+
+# 評估資料：題庫、執行報告、實驗結果含文章標題與作者資訊，只上傳評估腳本
+evals/BASELINE.md
+evals/rag/golden_set.jsonl
+evals/rag/last_run_report.json
+evals/rag/experiments/
+evals/router/golden_set.jsonl
+evals/router/last_run_report.json
+
+# 一次性的本機資料搬移腳本，依賴本機的文章資料夾與 CSV
+scripts/
