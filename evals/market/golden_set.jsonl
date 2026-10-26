@@ -1,0 +1,24 @@
+{"id": "lat-01", "query": "特斯拉現在股價多少？", "category": "stock", "symbols": ["TSLA"], "mode": "latest", "ambiguous": false, "note": "中文公司名 → 代號"}
+{"id": "lat-02", "query": "蘋果股價", "category": "stock", "symbols": ["AAPL"], "mode": "latest", "ambiguous": false, "note": "只有名詞，沒有動詞"}
+{"id": "lat-03", "query": "輝達今天收多少？", "category": "stock", "symbols": ["NVDA"], "mode": "latest", "ambiguous": false, "note": "台灣譯名"}
+{"id": "lat-04", "query": "比特幣現在多少錢", "category": "crypto", "symbols": ["BTC/USD"], "mode": "latest", "ambiguous": false, "note": "加密貨幣要帶 /USD"}
+{"id": "lat-05", "query": "以太幣價格", "category": "crypto", "symbols": ["ETH/USD"], "mode": "latest", "ambiguous": false, "note": ""}
+{"id": "lat-06", "query": "SOL 現在多少？", "category": "crypto", "symbols": ["SOL/USD"], "mode": "latest", "ambiguous": false, "note": "只給代號，要判斷是加密貨幣"}
+{"id": "lat-07", "query": "狗狗幣現在多少", "category": "crypto", "symbols": ["DOGE/USD"], "mode": "latest", "ambiguous": false, "note": "暱稱"}
+{"id": "lat-08", "query": "Palantir 現在多少錢一股？", "category": "stock", "symbols": ["PLTR"], "mode": "latest", "ambiguous": false, "note": "英文公司名"}
+{"id": "lat-09", "query": "亞馬遜股價多少", "category": "stock", "symbols": ["AMZN"], "mode": "latest", "ambiguous": false, "note": ""}
+{"id": "lat-10", "query": "查一下 Google 的股價", "category": "stock", "symbols": ["GOOGL"], "symbols_alt": [["GOOG"]], "mode": "latest", "ambiguous": false, "note": "GOOGL / GOOG 都算對"}
+{"id": "lat-11", "query": "比較 AAPL 和 MSFT 現在的價格", "category": "stock", "symbols": ["AAPL", "MSFT"], "mode": "latest", "ambiguous": false, "note": "一次查兩檔"}
+{"id": "lat-12", "query": "台積電 ADR 現在多少？", "category": "stock", "symbols": ["TSM"], "mode": "latest", "ambiguous": false, "note": "Alpaca 只有美股，台積電要查 ADR"}
+{"id": "lat-13", "query": "台積電股價", "category": "stock", "symbols": ["TSM"], "mode": "latest", "ambiguous": true, "note": "使用者可能想問台股 2330，但系統只支援美股，查 ADR 是合理的退而求其次"}
+{"id": "lat-14", "query": "Circle 的股價現在多少？", "category": "stock", "symbols": ["CRCL"], "mode": "latest", "ambiguous": false, "note": "2025 年才上市，測 LLM 知不知道新代號"}
+{"id": "his-01", "query": "查一下 AAPL 過去90天走勢，幫我畫K線圖", "category": "stock", "symbols": ["AAPL"], "mode": "history", "fig": true, "start": [{"days_ago": 90, "tol": 3}], "ambiguous": false, "note": "README 裡的範例"}
+{"id": "his-02", "query": "特斯拉最近一個月的走勢", "category": "stock", "symbols": ["TSLA"], "mode": "history", "start": [{"days_ago": 30, "tol": 3}], "ambiguous": false, "note": "相對日期：LLM 必須知道今天是幾號"}
+{"id": "his-03", "query": "比特幣過去一週的價格變化", "category": "crypto", "symbols": ["BTC/USD"], "mode": "history", "start": [{"days_ago": 7, "tol": 2}], "ambiguous": false, "note": "相對日期"}
+{"id": "his-04", "query": "畫出 NVDA 今年以來的K線圖", "category": "stock", "symbols": ["NVDA"], "mode": "history", "fig": true, "start": [{"date": "THIS_YEAR_START", "tol": 3}], "ambiguous": false, "note": "相對日期：今年 1 月 1 日"}
+{"id": "his-05", "query": "微軟 2025 年整年的股價走勢", "category": "stock", "symbols": ["MSFT"], "mode": "history", "start": [{"date": "2025-01-01", "tol": 3}], "end": [{"date": "2025-12-31", "tol": 3}], "ambiguous": false, "note": "絕對日期區間"}
+{"id": "his-06", "query": "SPY 最近三個月的表現", "category": "stock", "symbols": ["SPY"], "mode": "history", "start": [{"days_ago": 90, "tol": 5}], "ambiguous": false, "note": "ETF 歸在 stock"}
+{"id": "his-07", "query": "以太幣過去半年的K線圖", "category": "crypto", "symbols": ["ETH/USD"], "mode": "history", "fig": true, "start": [{"days_ago": 182, "tol": 7}], "ambiguous": false, "note": ""}
+{"id": "his-08", "query": "幫我畫 EOSE 的股價走勢圖", "category": "stock", "symbols": ["EOSE"], "mode": "history", "fig": true, "start": [{"days_ago": 90, "tol": 3}], "ambiguous": false, "note": "沒說期間，預設 90 天"}
+{"id": "his-09", "query": "Meta 上個月的走勢圖", "category": "stock", "symbols": ["META"], "mode": "history", "fig": true, "start": [{"days_ago": 30, "tol": 4}, {"date": "LAST_MONTH_START", "tol": 2}], "ambiguous": true, "note": "「上個月」可以是過去 30 天，也可以是上一個完整月份，兩種都算對"}
+{"id": "his-10", "query": "2026 年 3 月特斯拉的股價", "category": "stock", "symbols": ["TSLA"], "mode": "history", "start": [{"date": "2026-03-01", "tol": 1}], "end": [{"date": "2026-03-31", "tol": 2}], "ambiguous": false, "note": "指定月份"}
